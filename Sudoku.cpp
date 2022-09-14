@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include "HEADERS\PRINTER.h"
 
 using namespace std;
 bool IsSafe(vector<vector<char>>mat,int row,int col,char val){
@@ -55,6 +54,10 @@ int main() {
                              {'.', '.', '5', '2', '.', '.', '3', '.', '.'} };
     int n=mat.size();
     Solve(mat);
-    cout<<mat;
+    for(int i=0;i<mat.size();i++){
+        for(int j=0;j<mat[i].size();j++)
+          cout<<mat[i][j]<<" ";
+        cout<<endl;
+    }
     return 0;
 }
